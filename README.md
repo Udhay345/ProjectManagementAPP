@@ -42,7 +42,7 @@ The database is structured to efficiently manage the core entities of the applic
 
 ### ER Diagram
 
-*![ER Diagram](./assets/er_diagram.png)*
+![ER Diagram](assets/er_diagram.png)
 
 ## UI/UX Design
 
@@ -53,13 +53,12 @@ The application features a modern, clean, and highly responsive user interface:
 
 ### Frontend Screenshots
 
-*![Dashboard Overview](./assets/img1.png)*
-*![Project Details](./assets/3.png)*
-*![Tasks Overview](./assets/4.png)*
-*![Task Details](./assets/5.png)*
-*![Create/Edit Flow](./assets/6.png)*
-*![Mobile/Responsive View](./assets/7.png)*
-*![Settings/Profile](./assets/8.png)*
+![Project Details](assets/3.png)
+![Tasks Overview](assets/4.png)
+![Task Details](assets/5.png)
+![Create/Edit Flow](assets/6.png)
+![Mobile/Responsive View](assets/7.png)
+![Settings/Profile](assets/8.png)
 ## Conclusion
 
 This Project Management App demonstrates a full-stack, scalable approach to building productivity tools. By combining a modern Next.js frontend with a secure Node.js/MySQL backend, it delivers a robust, visually appealing, and highly functional user experience tailored for personal task organization.
