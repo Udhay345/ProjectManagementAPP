@@ -1,0 +1,38 @@
+﻿
+app\(dashboard)\dashboard\page.tsx:210:                      {task.assignee && (
+app\(dashboard)\dashboard\page.tsx:212:                          memberId={task.assignee.id}
+app\(dashboard)\dashboard\page.tsx:213:                          name={task.assignee.name}
+app\(dashboard)\profile\page.tsx:59:    t.assignee && (
+app\(dashboard)\profile\page.tsx:60:      String(t.assignee.id) === String(currentUser?.id) || 
+app\(dashboard)\profile\page.tsx:61:      t.assignee.name?.toLowerCase() === name.toLowerCase()
+app\(dashboard)\projects\[id]\page.tsx:54:  const [taskAssigneeId, setTaskAssigneeId] = useState('');
+app\(dashboard)\projects\[id]\page.tsx:117:    const assignee = taskAssigneeId ? members.find(m => String(m.id) === 
+taskAssigneeId) || null : null;
+app\(dashboard)\projects\[id]\page.tsx:126:      assignee,
+app\(dashboard)\projects\[id]\page.tsx:136:    setTaskAssigneeId('');
+app\(dashboard)\projects\[id]\page.tsx:273:                    <th className="py-3 px-6 w-32">Assignee</th>
+app\(dashboard)\projects\[id]\page.tsx:312:                        {task.assignee ? (
+app\(dashboard)\projects\[id]\page.tsx:315:                              memberId={task.assignee.id}
+app\(dashboard)\projects\[id]\page.tsx:316:                              name={task.assignee.name}
+app\(dashboard)\projects\[id]\page.tsx:319:                            <span className="font-medium text-slate-700 
+hidden md:inline">{task.assignee.name}</span>
+app\(dashboard)\projects\[id]\page.tsx:493:                <label className="block text-xs font-semibold 
+text-slate-700 uppercase tracking-wider mb-1.5">Assignee</label>
+app\(dashboard)\projects\[id]\page.tsx:496:                  value={taskAssigneeId}
+app\(dashboard)\projects\[id]\page.tsx:497:                  onChange={(e) => setTaskAssigneeId(e.target.value)}
+app\(dashboard)\projects\[id]\page.tsx:500:                  <option value="">Select an assignee</option>
+app\(dashboard)\tasks\[id]\page.tsx:253:              {/* Assignee */}
+app\(dashboard)\tasks\[id]\page.tsx:255:                <span className="text-slate-400">Assignee</span>
+app\(dashboard)\tasks\[id]\page.tsx:256:                {task.assignee ? (
+app\(dashboard)\tasks\[id]\page.tsx:259:                      memberId={task.assignee.id}
+app\(dashboard)\tasks\[id]\page.tsx:260:                      name={task.assignee.name}
+app\(dashboard)\tasks\[id]\page.tsx:263:                    <span className="text-slate-800 
+font-semibold">{task.assignee.name}</span>
+app\(dashboard)\tasks\page.tsx:92:                  <th className="py-3 px-6 w-32">Assignee</th>
+app\(dashboard)\tasks\page.tsx:123:                      {task.assignee ? (
+app\(dashboard)\tasks\page.tsx:126:                            memberId={task.assignee.id}
+app\(dashboard)\tasks\page.tsx:127:                            name={task.assignee.name}
+app\(dashboard)\tasks\page.tsx:130:                          <span className="font-medium text-slate-700 hidden 
+md:inline">{task.assignee.name}</span>
+
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProFlow - Sign In</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Geist for UI, EB Garamond for Brand Identity -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700&family=Geist:wght@100..900&family=JetBrains+Mono:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#131b2e",
+                      "on-secondary-fixed": "#0b1c30",
+                      "on-error-container": "#93000a",
+                      "secondary-container": "#d0e1fb",
+                      "secondary": "#505f76",
+                      "surface-container-highest": "#dae2fd",
+                      "tertiary": "#525657",
+                      "secondary-fixed": "#d3e4fe",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#dbe1ff",
+                      "surface-container": "#eaedff",
+                      "inverse-on-surface": "#eef0ff",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#131b2e",
+                      "outline-variant": "#c3c6d7",
+                      "on-tertiary-fixed": "#191c1e",
+                      "inverse-primary": "#b4c5ff",
+                      "surface-container-low": "#f2f3ff",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "surface-variant": "#dae2fd",
+                      "surface-dim": "#d2d9f4",
+                      "tertiary-fixed": "#e0e3e5",
+                      "background": "#faf8ff",
+                      "primary": "#004ac6",
+                      "on-primary-fixed": "#00174b",
+                      "on-primary-container": "#eeefff",
+                      "surface-tint": "#0053db",
+                      "on-tertiary-container": "#eff1f3",
+                      "inverse-surface": "#283044",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "surface": "#faf8ff",
+                      "surface-bright": "#faf8ff",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "primary-container": "#2563eb",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "outline": "#737686",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#6b6e70",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "on-surface-variant": "#434655",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#54647a",
+                      "surface-container-high": "#e2e7ff",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sidebar-width": "260px",
+                      "gutter": "16px",
+                      "container-max": "1200px",
+                      "cell-padding-y": "8px",
+                      "unit": "4px",
+                      "cell-padding-x": "12px"
+              },
+              "fontFamily": {
+                      "brand": ["EB Garamond", "serif"],
+                      "body-lg": ["Geist"],
+                      "label-md": ["Geist"],
+                      "headline-lg-mobile": ["Geist"],
+                      "headline-lg": ["Geist"],
+                      "body-md": ["Geist"],
+                      "code": ["jetbrainsMono"],
+                      "headline-sm": ["Geist"],
+                      "headline-md": ["Geist"],
+                      "display": ["Geist"]
+              },
+              "fontSize": {
+                      "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "code": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #faf8ff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .input-focus-ring:focus {
+            outline: 2px solid #2563eb;
+            outline-offset: -1px;
+        }
+        .brand-italic {
+            font-family: 'EB Garamond', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen items-center justify-center font-body-md text-on-surface">
+<!-- Atmospheric Background Element -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-secondary-container opacity-20 blur-[100px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-primary-fixed opacity-30 blur-[120px]"></div>
+</div>
+<!-- Login Container -->
+<main class="w-full max-w-[400px] px-gutter flex flex-col items-center">
+<!-- Brand Header -->
+<header class="mb-12 text-center">
+<h1 class="brand-italic text-[48px] text-primary tracking-tight mb-2">ProFlow</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Focus. Execute. Deliver.</p>
+</header>
+<!-- Form Card -->
+<div class="w-full bg-white border border-outline-variant rounded-lg p-8 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-6">Sign In</h2>
+<form class="space-y-5" onsubmit="return false;">
+<!-- Email Address -->
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant block" for="email">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">mail</span>
+<input class="w-full h-11 pl-10 pr-4 bg-background border border-outline-variant rounded-lg text-body-md input-focus-ring transition-all placeholder:text-outline" id="email" placeholder="name@company.com" type="email"/>
+</div>
+</div>
+<!-- Password -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface-variant block" for="password">Password</label>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">lock</span>
+<input class="w-full h-11 pl-10 pr-10 bg-background border border-outline-variant rounded-lg text-body-md input-focus-ring transition-all placeholder:text-outline" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Sign In Action -->
+<button class="w-full h-11 bg-primary-container text-white font-label-md text-body-md font-semibold rounded-lg hover:bg-primary transition-colors active:scale-[0.98] mt-4 flex items-center justify-center gap-2" type="submit">
+                    Sign In
+                </button>
+</form>
+</div>
+<!-- Secondary Link -->
+<footer class="mt-8 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                New to the workspace? 
+                <a class="text-primary font-semibold hover:underline ml-1" href="#">Create an account</a>
+</p>
+</footer>
+</main>
+<!-- Micro-interaction Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputs = document.querySelectorAll('input');
+            const submitBtn = document.querySelector('button[type="submit"]');
+
+            inputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.parentElement.classList.add('scale-[1.01]');
+                });
+                input.addEventListener('blur', () => {
+                    input.parentElement.classList.remove('scale-[1.01]');
+                });
+            });
+
+            // Password Toggle Logic
+            const togglePass = document.querySelector('button .material-symbols-outlined');
+            const passInput = document.getElementById('password');
+            let isVisible = false;
+
+            togglePass?.parentElement.addEventListener('click', () => {
+                isVisible = !isVisible;
+                passInput.type = isVisible ? 'text' : 'password';
+                togglePass.textContent = isVisible ? 'visibility_off' : 'visibility';
+            });
+        });
+    </script>
+</body></html>
